@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input { @apply border p-2 rounded w-full }
+  .btn { @apply bg-blue-600 text-white px-4 py-2 rounded }
+  .card { @apply border p-3 rounded shadow }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body.dark {
+    @apply bg-slate-900 text-white;
+  }
+  body.dark .bg-white        { @apply bg-slate-800; }
+  body.dark .text-slate-800  { @apply text-slate-100; }
+  body.dark .text-slate-700  { @apply text-slate-300; }
+  body.dark .bg-slate-100    { @apply bg-slate-700; }
+}
